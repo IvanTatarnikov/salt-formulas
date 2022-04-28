@@ -1,4 +1,7 @@
-git_clone:
-  git.clone:
-   - cwd: /www-hello-world
-   - url: https://github.com/IvanTatarnikov/www-hello-world.git
+git:
+  pkg.installed: []
+  git.cloned:
+   - name: https://github.com/IvanTatarnikov/www-hello-world.git
+   - target: /www-hello-world
+   - require:
+     - pkg: git

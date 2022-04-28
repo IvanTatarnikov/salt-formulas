@@ -1,6 +1,5 @@
-https://github.com/IvanTatarnikov/www-hello-world.git:
-  file.managed:
-    - source: /www-hello-world
-    - mode: 644
-    - user: root
-    - group: root
+clone:
+  git:
+  - clone
+  - /www-hello-world
+  - https://github.com/IvanTatarnikov/www-hello-world.git

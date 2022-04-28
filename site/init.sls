@@ -1,5 +1,4 @@
-clone:
-  git:
-  - clone
-  - /www-hello-world
-  - https://github.com/IvanTatarnikov/www-hello-world.git
+git_clone:
+  git.clone:
+   - cwd: /www-hello-world
+   - url: https://github.com/IvanTatarnikov/www-hello-world.git
